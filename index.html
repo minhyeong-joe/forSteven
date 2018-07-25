@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Steven Tutorial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Special+Elite|Great+Vibes|Merienda|Lato" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+
+  </head>
+  <body>
+    <nav>
+      <div class="upper-nav">
+        <div class="collapse-btn">
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+        </div>
+        <a href="/"><img class="navbar-logo img-fluid" src="/imgs/logo.png" alt="logo.png"></a>
+        <div class="help-account-cart">
+          <a href="/account"><i class="fas fa-user-circle account-icon <?php if($page == 'account') {echo 'active';} ?>"></i></a>
+          <a href="/cart"><i class="fas fa-shopping-cart cart-icon <?php if($page == 'cart') {echo 'active';} ?>"></i></a>
+          <a href="/help"><i class="fas fa-question-circle help-icon <?php if($page == 'help') {echo 'active';} ?>"></i></a>
+        </div>
+      </div>
+      <div class="lower-nav">
+        <a href="/"><img class="navbar-logo img-fluid" src="/imgs/logo.png" alt="logo.png"></a>
+        <ul class="navbar">
+          <li class="navbar-item"><a href="/" class="navbar-link <?php if($page=='') {echo 'active';} ?>">HOME</a></li>
+
+          <li class="navbar-item"><a href="#" class="navbar-link product-dropdown-button">PRODUCTS</a>
+            <ul class="product-dropdown">
+              <div class="row no-gutters">
+                <div class="col-4">
+                  <li class="dropdown-title">Men</li>
+                  <li class="dropdown-item"><a href="/products/men-shirts" class="dropdown-link <?php if($c == 'men-shirts') {echo 'active';} ?>">Shirts</a></li>
+                  <li class="dropdown-item"><a href="/products/men-jackets" class="dropdown-link <?php if($c == 'men-jackets') {echo 'active';} ?>">Jackets</a></li>
+                  <li class="dropdown-item"><a href="/products/men-jeans" class="dropdown-link <?php if($c == 'men-jeans') {echo 'active';} ?>">Jeans</a></li>
+                </div>
+                <div class="col-4">
+                  <li class="dropdown-title">Women</li>
+                  <li class="dropdown-item"><a href="/products/women-shirts" class="dropdown-link <?php if($c == 'women-shirts') {echo 'active';} ?>">Shirts</a></li>
+                  <li class="dropdown-item"><a href="/products/women-jackets" class="dropdown-link <?php if($c == 'women-jackets') {echo 'active';} ?>">Jackets</a></li>
+                  <li class="dropdown-item"><a href="/products/women-jeans" class="dropdown-link <?php if($c == 'women-jeans') {echo 'active';} ?>">Jeans</a></li>
+                </div>
+                <div class="col-4">
+                  <li class="dropdown-title">Kids</li>
+                  <li class="dropdown-item"><a href="/products/kids-shirts" class="dropdown-link <?php if($c == 'kids-shirts') {echo 'active';} ?>">Shirts</a></li>
+                  <li class="dropdown-item"><a href="/products/kids-jackets" class="dropdown-link <?php if($c == 'kids-jackets') {echo 'active';} ?>">Jackets</a></li>
+                  <li class="dropdown-item"><a href="/products/kids-jeans" class="dropdown-link" <?php if($c == 'kids-jeans') {echo 'active';} ?>>Jeans</a></li>
+                </div>
+              </div>
+            </ul>
+          </li>
+
+          <li class="navbar-item"><a href="/about" class="navbar-link <?php if($page == 'about') {echo 'active';} ?>">ABOUT</a></li>
+
+          <li class="navbar-item"><a href="/locations" class="navbar-link <?php if($page == 'locations') {echo 'active';} ?>">LOCATIONS</a></li>
+
+        </ul>
+
+        <div class="help-account-cart">
+          <a href="/account"><i class="fas fa-user-circle account-icon <?php if($page == 'account') {echo 'active';} ?>"></i></a>
+          <a href="/cart"><i class="fas fa-shopping-cart cart-icon <?php if($page == 'cart') {echo 'active';} ?>"></i></a>
+          <a href="/help"><i class="fas fa-question-circle help-icon <?php if($page == 'help') {echo 'active';} ?>"></i></a>
+        </div>
+      </div>
+
+    </nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+  </body>
+</html>
